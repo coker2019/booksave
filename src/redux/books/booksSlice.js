@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const booksSlice = createSlice({
-  name: 'books',
-  initialState: [
+const initialState = {
+  books: [
     {
       id: 'item1',
       title: 'The Great Gatsby',
@@ -22,14 +21,19 @@ const booksSlice = createSlice({
       category: 'Nonfiction',
     },
   ],
+};
+
+const booksSlice = createSlice({
+  name: 'books',
+  initialState,
   reducers: {
     addBook: (state, action) => {
       const { title, author } = action.payload;
       if (!title || !author) {
-        // Checks empty fields
+        // Checks if any field is empty
         return;
       }
-      state.push(action.payload);
+      state.books.push(action.payload);
     },
     removeBook: (state, action) => {
       state.books = state.books.filter((book) => book.id !== action.payload);
