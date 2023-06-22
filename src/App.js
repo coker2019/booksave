@@ -1,21 +1,25 @@
-import './App.css';
-import {
-  BrowserRouter as Router, Routes, Route,
-} from 'react-router-dom';
-
-// import Navigation from './components/NavBar';
-import Categories from './pages/categories';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Categories from './pages/Categories';
 import Home from './pages/Home';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/categories" element={<Categories />} />
-
-      </Routes>
-    </Router>
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <main>
+        <Routes>
+          <Route path="/bookSave/" element={<Home />} />
+          <Route path="/bookSave/categories" element={<Categories />} />
+        </Routes>
+      </main>
+      <footer>
+        <p className="copyright">&copy; 2023 BookSave | Developed by Maurice Coker</p>
+      </footer>
+    </>
   );
 }
 
