@@ -30,7 +30,6 @@ const booksSlice = createSlice({
     addBook: (state, action) => {
       const { title, author } = action.payload;
       if (!title || !author) {
-        // Checks if any field is empty
         return;
       }
       state.books.push(action.payload);
