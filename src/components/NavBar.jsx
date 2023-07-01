@@ -16,7 +16,6 @@ const Navbar = () => (
       <li>
         <Link className="nav-link" to="/bookstore-cms/">BOOKS</Link>
       </li>
-      <li>|</li>
       <li>
         <Link className="nav-link" to="/bookstore-cms/categories">CATEGORIES</Link>
       </li>

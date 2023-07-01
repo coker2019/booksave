@@ -20,7 +20,7 @@ ul li {
 }
 
 .nav-brand {
-  font-family: "Poppins", sans-serif;
+  font-family: Montserrat, "Arial", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
   color: #0290ff;
@@ -35,7 +35,7 @@ ul li {
 
 .nav-link {
   opacity: 0.5;
-  font-family: "Poppins", sans-serif;
+  font-family: Montserrat, "Arial", sans-serif;
   font-size: 0.813rem;
   color: #121212;
   letter-spacing: 1.9px;
