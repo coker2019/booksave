@@ -13,9 +13,7 @@ const Book = ({ book, onDelete }) => (
       </div>
       <ul className="btn-list">
         <li><Button>Comment</Button></li>
-        <li>|</li>
         <li><Button onClick={onDelete}>Remove</Button></li>
-        <li>|</li>
         <li><Button>Edit</Button></li>
       </ul>
     </div>
